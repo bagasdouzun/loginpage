@@ -15,9 +15,20 @@ $user_type = $SESSION["level"];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard <?php echo ucfirst($user_name); ?></title>
+    <link rel="stylesheet" href="style dashboard.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Selamat datang, <?php echo htmlspecialchars($user_name); ?>!</h1>
+
+        <div class="menu">
+            <?php if ($user_type == 'admin'): ?>
+                <a href="#">Tambah Siswa</a>
+                <a href="#">Tambah Petugas</a>
+                <a href="#">Data Siswa</a>
+                <a href="#">Data Petugas</a>
+        </div>
+    </div>
 </body>
 </html>
