@@ -28,6 +28,16 @@ $user_type = $SESSION["level"];
                 <a href="#">Tambah Petugas</a>
                 <a href="#">Data Siswa</a>
                 <a href="#">Data Petugas</a>
+
+            <?php elseif ($user_type == 'petugas'): ?>
+                <a href="scan_rfid_nis.php">Belanja</a>
+                <a href="tambah_saldo.php">Tambah Saldo</a>
+                <a href="laporan_topup_saldo.php">Laporan Topup</a>
+
+            <?php elseif ($user_type == 'user_kantin'): ?>
+                <a href="scan_rfid_nis.php">Belanja</a>
+                <a href="laporan_transaksi.php">Laporan Transaksi</a>
+            <?php endif; ?>
         </div>
     </div>
 </body>
