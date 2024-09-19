@@ -39,6 +39,8 @@ $user_type = $SESSION["level"];
                 <a href="laporan_transaksi.php">Laporan Transaksi</a>
             <?php endif; ?>
         </div>
+
+        <a href="logout.php" class="logout-btn">Logout</a>
     </div>
 </body>
 </html>
